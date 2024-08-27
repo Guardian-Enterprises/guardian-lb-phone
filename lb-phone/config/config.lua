@@ -305,6 +305,10 @@ Config.Locales = { -- languages that the player can choose from when setting up 
     {
         locale = "it",
         name = "Italiano"
+    },
+    {
+        locale = "ua",
+        name = "Українська"
     }
 }
 
@@ -359,8 +363,8 @@ Config.AllowExternal = { -- allow people to upload external images? (note: this 
     Gallery = true, -- allow importing external links to the gallery?
     Birdy = false, -- set to true to enable external images on that specific app, set to false to disable it.
     InstaPic = false,
-    Tinder = false,
-    Trendy = true,
+    Spark = false,
+    Trendy = false,
     Pages = false,
     MarketPlace = false,
     Mail = false,
