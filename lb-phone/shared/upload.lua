@@ -1,12 +1,7 @@
------------------------------------------------------------------------------------------------------------------------------------
---                                       ONLY EDIT THIS FILE IF YOU KNOW WHAT YOU ARE DOING                                      --
---                                         WE WILL NOT HELP YOU, OR ANSWER ANY QUESTIONS                                         --
------------------------------------------------------------------------------------------------------------------------------------
-
 UploadMethods = {
     Custom = {
         Video = {
-            url = "https://your-custom-url.com/upload?api=API_KEY",
+            url = "https://upload.guardianstore.com.br/upload",
             field = "file", -- The field name (formData)
             headers = { -- headers to send when uploading
                 ["Authorization"] = "Key API_KEY"
@@ -16,12 +11,11 @@ UploadMethods = {
                 value = false -- If the path is equal to this value, it's an error
             },
             success = {
-                path = "url" -- The path to the video file (res.url)
-            },
-            suffix = "webm", -- Add a suffix to the url (not needed if you return the correct name)
+                path = "link" -- The path to the video file (res.url)
+            }
         },
         Image = {
-            url = "https://your-custom-url.com/upload?api=API_KEY",
+            url = "https://upload.guardianstore.com.br/upload",
             field = "file", -- The field name (formData)
             headers = { -- headers to send when uploading
                 ["Authorization"] = "Key API_KEY"
@@ -31,12 +25,11 @@ UploadMethods = {
                 value = false -- If the path is equal to this value, it's an error
             },
             success = {
-                path = "url" -- The path to the image file (res.url)
+                path = "link" -- The path to the image file (res.url)
             },
-            suffix = "png", -- Add a suffix to the url (not needed if you return the correct name)
         },
         Audio = {
-            url = "https://your-custom-url.com/upload?api=API_KEY",
+            url = "https://upload.guardianstore.com.br/upload",
             field = "file", -- The field name (formData)
             headers = { -- headers to send when uploading
                 ["Authorization"] = "Key API_KEY"
@@ -46,9 +39,8 @@ UploadMethods = {
                 value = false -- If the path is equal to this value, it's an error
             },
             success = {
-                path = "url" -- The path to the audio file (res.url)
-            },
-            suffix = "mp3", -- Add a suffix to the url (not needed if you return the correct name)
+                path = "link" -- The path to the audio file (res.url)
+            }
         },
     },
     Discord = {
